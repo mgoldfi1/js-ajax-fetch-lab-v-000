@@ -9,6 +9,7 @@ function forkRepo() {
   //use fetch to fork it!
   fetch(repo,
     {
+    method: 'POST'
     headers: {
       Authorization: `token ${getToken()}`
     }
